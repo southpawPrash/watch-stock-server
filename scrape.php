@@ -4,7 +4,7 @@ require_once('includes/config.inc');
 require_once('library/simple_html_dom.php');
 
 // create HTML DOM
-$html           = file_get_html(SCRAP_URL);
+$html           = file_get_html(SCRAPE_URL);
 sleep(rand(3,6));
 $sectorCounter  = 0;
 
