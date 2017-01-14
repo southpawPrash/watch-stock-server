@@ -1,6 +1,6 @@
 <?php
 #DB Connection
-$host 		= '127.0.0.1';
+$host 		= 'localhost';
 $db 		= 'watchstock';
 $db_user 	= 'root';
 $db_pass 	= '1ihiw2itb';
