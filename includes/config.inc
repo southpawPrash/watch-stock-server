@@ -12,7 +12,7 @@ error_reporting(E_ALL);
 set_time_limit(0);
 
 #URL used to scrap data
-define("SCRAP_URL", "http://www.moneycontrol.com/stocks/marketinfo/totassets/bse/index.html");
+define("SCRAP_URL", "http://www.moneycontrol.com/stocks/marketinfo/totassets/nse/index.html");
 
 #Minimum upmove(in percent) a stock must make to be reported in the daily report.
 define("DAILY_REPORT_UPMOVE_PERCENT", '5');
