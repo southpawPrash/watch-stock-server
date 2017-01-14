@@ -3,7 +3,7 @@
 $host 		= '127.0.0.1';
 $db 		= 'watchstock';
 $db_user 	= 'root';
-$db_pass 	= '';
+$db_pass 	= '1ih1w2itb';
 $mysql 		= new mysqli($host, $db_user, $db_pass, $db) or die("Could not connect to database.");
 
 #Error Reporting
