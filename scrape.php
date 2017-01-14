@@ -41,7 +41,7 @@ function scrapeSector($url, $sectorName) {
 
         if (!empty($companyName) && !empty($price)) {
                 $insertQuery = "INSERT INTO stockquotes (company_name, sector_name, price) VALUES ('{$companyName}', '{$sectorName}', '{$price}')";
-                $mysql->query($insertQuery) or die(mysqli_error());
+                $mysql->query($insertQuery) or die($mysql->error);
         }
     }    
     
