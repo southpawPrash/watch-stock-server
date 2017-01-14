@@ -1,10 +1,11 @@
 <?php
 require_once('includes/config.inc');
-require_once('includes/cors.inc');
+//require_once('includes/cors.inc');
 require_once('library/simple_html_dom.php');
 
 // create HTML DOM
 $html           = file_get_html(SCRAP_URL);
+sleep(SLEEP);
 $sectorCounter  = 0;
 
 foreach ($html->find(".lftmenu a") as $sector) {
@@ -25,6 +26,7 @@ function scrapeSector($url, $sectorName) {
     global $mysql;
 
     $sectorHtml = file_get_html($url);
+    sleep(SLEEP);
     $rowCount 	= 0;
     
     foreach ($sectorHtml->find('table.tbldata14 tr') as $row) {
