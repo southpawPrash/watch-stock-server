@@ -37,7 +37,7 @@ function scrapeSector($url, $sectorName) {
         }
 
         $companyName 	= trim(str_replace(array("Add to Watchlist", "Add to Portfolio","\r\n", "\r", "\n", "\t"), "", $row->find('td', 0)->plaintext));
-        $price          = trim($row->find('td', 1)->plaintext);
+        $price          = str_replace(",", "", trim($row->find('td', 1)->plaintext));
 
         if (!empty($companyName) && !empty($price)) {
                 $insertQuery = "INSERT INTO stockquotes (company_name, sector_name, price) VALUES ('{$companyName}', '{$sectorName}', '{$price}')";
