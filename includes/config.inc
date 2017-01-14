@@ -17,4 +17,3 @@ define("SCRAP_URL", "http://www.moneycontrol.com/stocks/marketinfo/totassets/bse
 #Minimum upmove(in percent) a stock must make to be reported in the daily report.
 define("DAILY_REPORT_UPMOVE_PERCENT", '5');
 
-define("SLEEP", 5);

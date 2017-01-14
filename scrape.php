@@ -5,7 +5,7 @@ require_once('library/simple_html_dom.php');
 
 // create HTML DOM
 $html           = file_get_html(SCRAP_URL);
-sleep(SLEEP);
+sleep(rand(3,6));
 $sectorCounter  = 0;
 
 foreach ($html->find(".lftmenu a") as $sector) {
@@ -26,7 +26,7 @@ function scrapeSector($url, $sectorName) {
     global $mysql;
 
     $sectorHtml = file_get_html($url);
-    sleep(SLEEP);
+    sleep(rand(3,6));
     $rowCount 	= 0;
     
     foreach ($sectorHtml->find('table.tbldata14 tr') as $row) {
